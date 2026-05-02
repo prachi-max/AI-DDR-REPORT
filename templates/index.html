@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI DDR Report Generator</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<div class="main">
+    <div class="card">
+        <h1>AI DDR Report Generator</h1>
+        <p class="subtitle">Upload both reports to generate AI insights</p>
+
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+
+            <div class="upload-row">
+
+                <div class="upload-box">
+                    <label>📄 Inspection Report</label>
+                    <input type="file" name="inspection" required>
+                    <p class="hint">Upload inspection PDF</p>
+                </div>
+
+                <div class="upload-box">
+                    <label>🌡️ Thermal Report</label>
+                    <input type="file" name="thermal" required>
+                    <p class="hint">Upload thermal PDF</p>
+                </div>
+
+            </div>
+
+            <button type="submit" class="btn">Generate DDR Report</button>
+        </form>
+
+        {% if report_path %}
+        <div class="result">
+            <h2>Report Generated </h2>
+            <a href="/report" target="_blank" class="view-btn">View Report</a>
+        </div>
+        {% endif %}
+
+    </div>
+</div>
+
+</body>
+</html>

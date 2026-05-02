@@ -1,0 +1,21 @@
+You are generating a professional client-ready Detailed Diagnostic Report (DDR).
+
+Create the report using this structure:
+
+1. Property Issue Summary  
+2. Area-wise Observations  
+3. Probable Root Cause  
+4. Severity Assessment  
+5. Recommended Actions  
+6. Additional Notes  
+7. Missing or Unclear Information  
+
+RULES:
+- Do NOT invent data
+- Use simple language
+- Mention "Not Available" where needed
+- Mention images:
+  "Image: [Attached]" or "Image: Not Available"
+
+DATA:
+{final_data}

@@ -1,0 +1,35 @@
+You are an AI system responsible for combining building inspection data.
+
+You are given two datasets:
+1. Inspection observations
+2. Thermal observations
+
+Your job:
+- Merge related observations into unified insights
+- Remove duplicates
+- Combine complementary information
+- Preserve all important details
+
+CRITICAL RULES:
+- If two entries refer to the same issue → merge them
+- If data conflicts → mark conflict clearly
+- Do NOT discard useful information
+- Do NOT invent new data
+
+Return ONLY valid JSON:
+
+[
+  {
+    "area": "",
+    "combined_issue": "",
+    "supporting_data": "",
+    "conflict": "Yes/No",
+    "conflict_details": ""
+  }
+]
+
+Inspection Data:
+{inspection_data}
+
+Thermal Data:
+{thermal_data}
