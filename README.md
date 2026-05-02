@@ -9,21 +9,16 @@ An AI-powered system that analyzes building inspection and thermal reports to ge
 - Professional report generation
 - Modern UI dashboard
 
-## 🧠 Tech Stack
+##  Tech Stack
 - Python (Flask)
 - Ollama (Local LLM - llama3 / mistral)
 - HTML, CSS
 
-## ⚙️ How to Run
+##  How to Run
 
 1. Install dependencies:
 ```bash
 pip install -r requirements.txt
-
-
-# 🎯 Final Result
-
-Your repo will look like:
 
 ```text
 ai-ddr-report/
